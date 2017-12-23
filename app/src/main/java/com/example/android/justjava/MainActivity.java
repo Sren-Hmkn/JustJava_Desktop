@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         checkBoxWhippedCream.setText(getString(R.string.whippedCream,1));
 
     }
-    
+
     /**
      * This method is called when the order button is clicked.
      */
@@ -62,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
         outputText += " " + getString(R.string.pricingText,total_price);
         outputText += "\n" + getString(R.string.thanks);
         composeEmail(outputText);
+    }
+
+    public void test(){
+        
     }
 
     public void composeEmail(String text) {
