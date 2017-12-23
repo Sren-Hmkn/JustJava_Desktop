@@ -41,9 +41,7 @@ public class MainActivity extends AppCompatActivity {
         checkBoxWhippedCream.setText(getString(R.string.whippedCream,1));
 
     }
-    public void test(){
-        //this is an empty test
-    }
+    
     /**
      * This method is called when the order button is clicked.
      */
