@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <EditText
+        android:id="@+id/name_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="@string/nameHint"
+        android:layout_marginBottom="24dp"
+        android:inputType="textCapWords"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            style="@style/HeaderTextStyle"
+            android:text="@string/toppings"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <CheckBox
+            android:id="@+id/chocolate"
+            style="@style/checkBoxForToppings"
+            />
+        <CheckBox
+            android:id="@+id/whipped_cream"
+            style="@style/checkBoxForToppings"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            style="@style/HeaderTextStyle"
+            android:text="@string/quantity"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/decrement_quantity"
+                style="@style/inAndDecreaser"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="24dp"
+                android:textSize="20dp"
+                android:text="0"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/increment_quantity"
+                style="@style/inAndDecreaser"
+                android:text="+"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/HeaderTextStyle"
+            android:text="@string/finalPrice"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/totalprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 €"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/submit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submitOrder"
+            android:onClick="submitOrder"/>
+
+
+</LinearLayout>

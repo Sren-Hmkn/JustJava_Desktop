@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Java</string>
+    <string name="toppings">Topping</string>
+    <string name="quantity">Quantity</string>
+    <string name="finalPrice">Price</string>
+    <string name="chocolate">Chocolate (+ <xliff:g id="chocolatePrice" example="3">%d</xliff:g> € per cup)</string>
+    <string name="whippedCream">Whipped Cream (+ <xliff:g id="whippedCreamPrice" example="3">%d</xliff:g> € per cup)</string>
+    <string name="nameHint">name</string>
+    <string name="submitOrder">submit order</string>
+
+    <string name="greetings">Dear Coffeemaker Team,</string>
+    <string name="mailText">I, <xliff:g id="name" example="Amy">%s</xliff:g>, would like to order  <xliff:g id="amount" example="2">%d</xliff:g>x Coffee,</string>
+    <string name="pricingText">for the price of <xliff:g id="price" example="3">%d</xliff:g> €.</string>
+    <string name="wWCwCh">with whipped cream and chocolate,</string>
+    <string name="wWCnoCh">with whipped cream,</string>
+    <string name="noWCwCh">with chocolate,</string>
+    <string name="noWCnoCh">without any extras,</string>
+    <string name="thanks">Thank you!</string>
+    <string name="mailSubject">Coffeeorder</string>
+</resources>
